@@ -1,0 +1,9 @@
+{
+  "Name": "No Back Key",
+  "Author": "Maito",
+  "Version": "1.0.0",
+  "Description": "Blocks the Escape (back) key that some mice and devices send when right-click is released.",
+  "UniqueID": "Maito.NoBackKey",
+  "EntryDll": "NoBackKey.dll",
+  "MinimumApiVersion": "4.0.0"
+}
