@@ -23,7 +23,7 @@ This mod suppresses the `Escape` (back) key, plus any extra buttons you choose, 
 
 ## 📥 Installation
 1. Ensure you have [SMAPI for Cinderbox](https://github.com/Ekyso/Cinderbox) installed.
-2. Download the latest release from the [Releases page](#).
+2. Download the latest release from the [Releases page](https://github.com/Maitoisekai/No-Back-Key/releases).
 3. Extract the downloaded folder into your `Mods` directory.
 4. Run the game. 🚜
 
