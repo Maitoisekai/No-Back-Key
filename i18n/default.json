@@ -1,0 +1,34 @@
+{
+  "config.intro": "Blocks the Escape (back) key sent after a right-click.",
+
+  "config.section.main": "Main settings",
+  "config.section.keys": "Key bindings",
+  "config.section.advanced": "Advanced",
+  "config.section.debug": "Troubleshooting",
+
+  "config.enabled.name": "Enable mod",
+  "config.enabled.tooltip": "Turn the whole mod on or off without uninstalling it.",
+
+  "config.block-escape.name": "Block Escape key",
+  "config.block-escape.tooltip": "Suppress the Escape key entirely. Menus must be closed with the on-screen X button.",
+
+  "config.extra-buttons.name": "Extra blocked buttons",
+  "config.extra-buttons.tooltip": "Additional buttons to suppress. Useful if your device maps the back button to something else.",
+
+  "config.toggle-key.name": "Toggle mod key",
+  "config.toggle-key.tooltip": "Press this to enable or disable the mod while playing.",
+
+  "config.grace-ticks.name": "Suppress grace ticks",
+  "config.grace-ticks.tooltip": "How many extra ticks to keep swallowing input after a blocked press. Raise this if menus still close. 60 ticks = 1 second.",
+
+  "config.debug-log.name": "Debug: log buttons",
+  "config.debug-log.tooltip": "Write every button press to the SMAPI console. Useful for checking what is sent when right-click is released.",
+
+  "hud.enabled": "No Back Key: enabled",
+  "hud.disabled": "No Back Key: disabled",
+
+  "log.blocked": "Blocked {{button}}",
+  "log.pressed": "Pressed: {{button}}",
+  "log.loaded": "Loaded. Escape blocking: {{escape}}",
+  "log.gmcm-missing": "Generic Mod Config Menu not found — edit config.json manually to change settings."
+}

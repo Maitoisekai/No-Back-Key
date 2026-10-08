@@ -1,1 +1,34 @@
+{
+  "config.intro": "บล็อกปุ่ม Escape (back) ที่ถูกส่งตามมาหลังคลิกขวา",
 
+  "config.section.main": "ตั้งค่าหลัก",
+  "config.section.keys": "ปุ่มกด",
+  "config.section.advanced": "ขั้นสูง",
+  "config.section.debug": "แก้ปัญหา",
+
+  "config.enabled.name": "เปิดใช้งานมอด",
+  "config.enabled.tooltip": "เปิดหรือปิดมอดทั้งตัว โดยไม่ต้องถอนการติดตั้ง",
+
+  "config.block-escape.name": "บล็อกปุ่ม Escape",
+  "config.block-escape.tooltip": "กลืนปุ่ม Escape ทิ้งทั้งหมด ต้องปิดเมนูด้วยปุ่ม X บนหน้าจอแทน",
+
+  "config.extra-buttons.name": "ปุ่มเพิ่มเติมที่ต้องการบล็อก",
+  "config.extra-buttons.tooltip": "ปุ่มอื่นที่อยากให้กลืนทิ้ง ใช้ในกรณีที่เครื่องคุณแมปปุ่ม back เป็นปุ่มอื่น",
+
+  "config.toggle-key.name": "ปุ่มสลับเปิด/ปิดมอด",
+  "config.toggle-key.tooltip": "กดปุ่มนี้เพื่อเปิดหรือปิดมอดระหว่างเล่น",
+
+  "config.grace-ticks.name": "จำนวนทิกที่กลืนต่อ",
+  "config.grace-ticks.tooltip": "กลืน input ต่ออีกกี่ทิกหลังบล็อกปุ่ม ถ้าเมนูยังปิดเองให้เพิ่มค่านี้ 60 ทิก = 1 วินาที",
+
+  "config.debug-log.name": "ดีบัก: บันทึกปุ่มที่กด",
+  "config.debug-log.tooltip": "บันทึกทุกปุ่มที่กดลงคอนโซล SMAPI ใช้ตรวจว่าตอนปล่อยคลิกขวามีปุ่มอะไรถูกส่งตามมา",
+
+  "hud.enabled": "No Back Key: เปิดใช้งาน",
+  "hud.disabled": "No Back Key: ปิดใช้งาน",
+
+  "log.blocked": "บล็อก {{button}} แล้ว",
+  "log.pressed": "กด: {{button}}",
+  "log.loaded": "โหลดแล้ว บล็อก Escape: {{escape}}",
+  "log.gmcm-missing": "ไม่พบ Generic Mod Config Menu — แก้ config.json เองเพื่อเปลี่ยนการตั้งค่า"
+}
