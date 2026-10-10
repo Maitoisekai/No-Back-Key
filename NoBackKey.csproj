@@ -9,7 +9,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     
     <!-- Path to the game folder containing SMAPI and Stardew Valley binaries -->
-    <GameDir>/storage/emulated/0/Download/StardewValley</GameDir>
+    <GameDir>/mnt/sdcard/Download/StardewValley</GameDir>
   </PropertyGroup>
 
   <!-- Assembly References (Provided by the game/SMAPI at runtime) -->
