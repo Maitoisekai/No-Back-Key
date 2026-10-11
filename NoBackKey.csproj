@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Project Configuration & Target Framework -->
+  <!-- Import GamePath from stardewvalley.targets -->
+  <Import Project="..\stardewvalley.targets" Condition="Exists('..\stardewvalley.targets')" />
+  <Import Project="$(HOME)\stardewvalley.targets" Condition="'$(HOME)' != '' AND Exists('$(HOME)\stardewvalley.targets')" />
+
+  <!-- Project Configuration & Target Framework -->
+  <PropertyGroup>
+    <!-- .NET 8.0 is required for Stardew Valley 1.6+ and SMAPI 4.0+ -->
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>NoBackKey</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    
+    <!-- Path to the game folder containing SMAPI and Stardew Valley binaries -->
+    <GamePath Condition="'$(GamePath)' == ''">/home/maito/StardewValley</GamePath>
+    <GameDir Condition="'$(GameDir)' == ''">$(GamePath)</GameDir>
+  </PropertyGroup>
+
+  <!-- Assembly References (Provided by the game/SMAPI at runtime) -->
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>$(GamePath)/StardewModdingAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Stardew Valley">
+      <HintPath>$(GamePath)/Stardew Valley.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SMAPI.Toolkit.CoreInterfaces">
+      <HintPath>$(GamePath)/smapi-internal/SMAPI.Toolkit.CoreInterfaces.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(GamePath)/MonoGame.Framework.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="xTile">
+      <HintPath>$(GamePath)/xTile.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Output Assets Deployment: Copy manifest and localized translations to build output -->
+  <ItemGroup>
+    <None Update="manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="i18n\**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
